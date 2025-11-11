@@ -1,0 +1,14 @@
+C:\Users\loiea\Desktop\ovning2\bin\Debug\net9.0\ovning2.exe
+C:\Users\loiea\Desktop\ovning2\bin\Debug\net9.0\ovning2.deps.json
+C:\Users\loiea\Desktop\ovning2\bin\Debug\net9.0\ovning2.runtimeconfig.json
+C:\Users\loiea\Desktop\ovning2\bin\Debug\net9.0\ovning2.dll
+C:\Users\loiea\Desktop\ovning2\bin\Debug\net9.0\ovning2.pdb
+C:\Users\loiea\Desktop\ovning2\obj\Debug\net9.0\ovning2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\loiea\Desktop\ovning2\obj\Debug\net9.0\ovning2.AssemblyInfoInputs.cache
+C:\Users\loiea\Desktop\ovning2\obj\Debug\net9.0\ovning2.AssemblyInfo.cs
+C:\Users\loiea\Desktop\ovning2\obj\Debug\net9.0\ovning2.csproj.CoreCompileInputs.cache
+C:\Users\loiea\Desktop\ovning2\obj\Debug\net9.0\ovning2.dll
+C:\Users\loiea\Desktop\ovning2\obj\Debug\net9.0\refint\ovning2.dll
+C:\Users\loiea\Desktop\ovning2\obj\Debug\net9.0\ovning2.pdb
+C:\Users\loiea\Desktop\ovning2\obj\Debug\net9.0\ovning2.genruntimeconfig.cache
+C:\Users\loiea\Desktop\ovning2\obj\Debug\net9.0\ref\ovning2.dll
