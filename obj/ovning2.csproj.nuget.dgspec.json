@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\loiea\\Desktop\\ovning2\\ovning2.csproj": {}
+    "C:\\Users\\loiea\\Desktop\\ovning2\\ovning2\\ovning2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\loiea\\Desktop\\ovning2\\ovning2.csproj": {
+    "C:\\Users\\loiea\\Desktop\\ovning2\\ovning2\\ovning2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\loiea\\Desktop\\ovning2\\ovning2.csproj",
+        "projectUniqueName": "C:\\Users\\loiea\\Desktop\\ovning2\\ovning2\\ovning2.csproj",
         "projectName": "ovning2",
-        "projectPath": "C:\\Users\\loiea\\Desktop\\ovning2\\ovning2.csproj",
+        "projectPath": "C:\\Users\\loiea\\Desktop\\ovning2\\ovning2\\ovning2.csproj",
         "packagesPath": "C:\\Users\\loiea\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\loiea\\Desktop\\ovning2\\obj\\",
+        "outputPath": "C:\\Users\\loiea\\Desktop\\ovning2\\ovning2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\loiea\\AppData\\Roaming\\NuGet\\NuGet.Config"
