@@ -27,3 +27,4 @@ C:\Users\loiea\Desktop\ovning2\ovning2\obj\Debug\net9.0\refint\ovning2.dll
 C:\Users\loiea\Desktop\ovning2\ovning2\obj\Debug\net9.0\ovning2.pdb
 C:\Users\loiea\Desktop\ovning2\ovning2\obj\Debug\net9.0\ovning2.genruntimeconfig.cache
 C:\Users\loiea\Desktop\ovning2\ovning2\obj\Debug\net9.0\ref\ovning2.dll
+C:\Users\loiea\Desktop\ovning2\obj\Debug\net9.0\ovning2.sourcelink.json

@@ -1,4 +1,7 @@
 ﻿// Se https://aka.ms/new-console-template för mer information
+
+using ovning2;
+
 bool programrunning = true; // Variabel för att hålla programmet igång
 
 while (programrunning) // Programmet körs tills användaren väljer att avsluta
@@ -7,22 +10,32 @@ while (programrunning) // Programmet körs tills användaren väljer att avsluta
     Console.WriteLine("HuvudMeny");
     Console.WriteLine("1, Ungdom eller pensionar (enskild person)");
     Console.WriteLine("2, Grupp - beräkna totalpris för sällskap");
-    Console.WriteLine("3, Avsluta programmet");
+    Console.WriteLine("3, Upprepa en text 10 gånger");
+    Console.WriteLine("4, Det tredje ordet");
+    Console.WriteLine("5, Avsluta programmet");
     Console.WriteLine("Ange val:");
 
-    string choice = Console.ReadLine(); // Användarens menyval
+    string choice = Console.ReadLine() ?? string.Empty; // Användarens menyval
 
     switch (choice)
     {
         case "1":
-            YouthOrSenior(); // Kör metod för enskild person
+            TicketCalculator.YouthOrSenior(); // Kör metod för enskild person
             continue;
 
         case "2":
-            GroupPrice(); // Kör metod för gruppberäkning
+            TicketCalculator.GroupPrice(); // Kör metod för gruppberäkning
             continue;
 
         case "3":
+            RepeatTenTimes(); // Kör metod för att upprepa text tio gånger
+            continue;
+
+        case "4":
+            ThirdWord();
+            continue;
+
+        case "5":
             programrunning = false; // Avslutar loopen
             Console.WriteLine("Programmet avslutas...");
             break;
@@ -32,66 +45,37 @@ while (programrunning) // Programmet körs tills användaren väljer att avsluta
             break;
     }
 
-    // Metod för att beräkna pris för en person
-    static void YouthOrSenior()
-    {
-        Console.Write("Ange ålder: ");
-        string input = Console.ReadLine();
 
-        if (int.TryParse(input, out int age)) // Kontrollerar att inmatning är en siffra
+
+    static void RepeatTenTimes()
+    {
+        Console.Write("Ange en text: ");
+        string input = Console.ReadLine() ?? string.Empty;
+        for (int i = 0; i < 10; i++)
         {
-            if (age < 20)
-                Console.WriteLine("Ungdomspris: 80kr");
-            else if (age > 64)
-                Console.WriteLine("Pensionärspris: 90kr");
-            else
-                Console.WriteLine("Standardpris: 120kr");
+            Console.WriteLine($"{i}. {input}");
         }
-        else
-        {
-            Console.WriteLine("Ogiltig inmatning. Ange en siffra.");
-        }
+        Console.WriteLine();
     }
 
-    // Metod för att beräkna totalpris för en grupp
-    static void GroupPrice()
+    // metod för att hitta och visa det tredje ordet i en mening
+    static void ThirdWord()
     {
-        Console.WriteLine("Hur många personer är ni i sällskapet?");
-        string countInput = Console.ReadLine();
+        Console.Write("Ange en mening med minst tre ord: ");
+        string input = Console.ReadLine() ?? string.Empty;
 
-        if (int.TryParse(countInput, out int numberOfPeople) && numberOfPeople > 0)
+        // splita meningen i ord och ta bort tomma poster
+        string[] words = input.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+
+        if (words.Length >= 3)
         {
-            int totalPrice = 0;
-
-            // Loopar genom alla personer i gruppen
-            for (int i = 1; i <= numberOfPeople; i++)
-            {
-                Console.Write($"Ange ålder för person {i}: ");
-                string ageInput = Console.ReadLine();
-
-                if (int.TryParse(ageInput, out int age))
-                {
-                    if (age < 20)
-                        totalPrice += 80;
-                    else if (age > 64)
-                        totalPrice += 90;
-                    else
-                        totalPrice += 120;
-                }
-                else
-                {
-                    Console.WriteLine("Ogiltig ålder, räknas som standardpris.");
-                    totalPrice += 120;
-                }
-            }
-
-            // Skriver ut resultat
-            Console.WriteLine($"Antal personer: {numberOfPeople}");
-            Console.WriteLine($"Total kostnad: {totalPrice} SEK");
+            // visa det tredje ordet (index 2)
+            Console.WriteLine($"Det tredje ordet är: {words[2]}");
         }
         else
         {
-            Console.WriteLine("Ogiltigt antal personer.");
+            Console.WriteLine("Meningen innehåller färre än tre ord.");
         }
     }
 }
+
